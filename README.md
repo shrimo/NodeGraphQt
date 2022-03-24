@@ -5,18 +5,16 @@
 [![PEP8](https://img.shields.io/badge/code%20style-PEP8-green.svg)](https://www.python.org/dev/peps/pep-0008/) 
 [![stability-wip](https://img.shields.io/badge/stability-Work_In_Progress-lightgrey.svg)](https://github.com/orangemug/stability-badges/blob/master/README.md)
 
-*(Note: this project is a work in progress and not production ready.)*
-
 ---
 
-NodeGraphQt is a node graph framework that can be implemented and re purposed into 
-applications that supports PySide2.
+NodeGraphQt is a node graph framework for PySide2 that can be implemented and re-purposed into 
+applications.
 
 <img src="/docs/_images/screenshot.png" width="100%" title="NodeGraphQt">
 
 #### API Documentation
 
-https://jchanvfx.github.io/NodeGraphQt
+<a href="https://jchanvfx.github.io/NodeGraphQt" target="_blank">NodeGraphQt API documentation</a>
 
 #### Navigation
 
@@ -34,15 +32,17 @@ https://jchanvfx.github.io/NodeGraphQt
 | ----------------- |:------------------------:|
 | Slice Connections | `Shift + Alt + LMB Drag` |
 
-#### Properties Bin
-<img src="/docs/_images/prop_bin.png" width="600" title="Properties Bin">
-
 #### Vertical Layout
 <img src="/docs/_images/vertical_layout.png" width="400" title="Vertical Layout">
 
 #### Pipe Layout
 
 <img src="/docs/_images/pipe_layout_types.gif" width="600" title="Pipe Layout">
+
+#### Widgets
+<img src="/docs/_images/prop_bin.png" width="600" title="Properties Bin">
+<img src="/docs/_images/nodes_palette.png" width="350" title="Nodes Paletten">
+<img src="/docs/_images/nodes_tree.png" width="250" title="Nodes Tree">
 
 #### Example
 
