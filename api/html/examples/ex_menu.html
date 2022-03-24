@@ -115,7 +115,7 @@
 <li class="toctree-l1"><a class="reference internal" href="ex_port.html">Port Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ex_pipe.html">Pipe Examples</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Menu Examples</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#default-menu-setup">Default Menu Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#default-context-menu">Default Context Menu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#adding-to-the-graph-menu">Adding to the Graph Menu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#adding-to-the-nodes-menu">Adding to the Nodes Menu</a></li>
 </ul>
@@ -192,11 +192,11 @@
   <section id="menu-examples">
 <h1>Menu Examples<a class="headerlink" href="#menu-examples" title="Permalink to this headline">¶</a></h1>
 <p>Examples for customizing context menus in NodeGraphQt.</p>
-<section id="default-menu-setup">
-<h2>Default Menu Setup<a class="headerlink" href="#default-menu-setup" title="Permalink to this headline">¶</a></h2>
-<p>The NodeGraphQt module has a convenience function for setting up the node graph
-with a few essential menu commands.</p>
-<p><cite>See function:</cite> <code class="xref py py-func docutils literal notranslate"><span class="pre">NodeGraphQt.setup_context_menu()</span></code></p>
+<section id="default-context-menu">
+<h2>Default Context Menu<a class="headerlink" href="#default-context-menu" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">NodeGraphQt.NodeGraph</span></code> has a default context menu with a few essential
+menu commands built when initialized it can be accessed with the
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">NodeGraph.context_menu()</span></code> function.</p>
 <img alt="../_images/menu_hotkeys.png" src="../_images/menu_hotkeys.png" style="width: 300px;" />
 </section>
 <section id="adding-to-the-graph-menu">
