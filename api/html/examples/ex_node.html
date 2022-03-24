@@ -8,7 +8,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Node Examples &mdash; NodeGraphQt 0.1.7 documentation</title>
+  <title>Node Examples &mdash; NodeGraphQt 0.2.0 documentation</title>
   
 
   
@@ -72,7 +72,7 @@
             
             
               <div class="version">
-                0.1.7
+                0.2.0
               </div>
             
           
@@ -197,8 +197,8 @@
 <section id="creating-nodes">
 <h2>Creating Nodes<a class="headerlink" href="#creating-nodes" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line">Creating a node is done by calling the <code class="xref py py-func docutils literal notranslate"><span class="pre">NodeGraph.create_node()</span></code> function.</div>
-<div class="line">(<cite>see example below from line</cite> <code class="docutils literal notranslate"><span class="pre">line:</span> <span class="pre">23</span></code>)</div>
+<div class="line">Creating a node is done by calling the <a class="reference internal" href="../graph.html#NodeGraphQt.NodeGraph.create_node" title="NodeGraphQt.NodeGraph.create_node"><code class="xref py py-func docutils literal notranslate"><span class="pre">NodeGraphQt.NodeGraph.create_node()</span></code></a> function.</div>
+<div class="line">(<cite>see example below</cite> <code class="docutils literal notranslate"><span class="pre">line:</span> <span class="pre">23</span></code>)</div>
 </div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span> <span class="nn">Qt</span> <span class="kn">import</span> <span class="n">QtWidgets</span>
 <span class="linenos"> 2</span><span class="kn">from</span> <span class="nn">NodeGraphQt</span> <span class="kn">import</span> <span class="n">BaseNode</span><span class="p">,</span> <span class="n">NodeGraph</span>
@@ -221,15 +221,12 @@
 <span class="linenos">19</span>    <span class="n">node_graph</span> <span class="o">=</span> <span class="n">NodeGraph</span><span class="p">()</span>
 <span class="linenos">20</span>    <span class="n">node_graph</span><span class="o">.</span><span class="n">register_node</span><span class="p">(</span><span class="n">MyNode</span><span class="p">)</span>
 <span class="linenos">21</span>    <span class="n">node_graph</span><span class="o">.</span><span class="n">widget</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-<span class="linenos">22</span>
-<span class="hll"><span class="linenos">23</span>    <span class="c1"># here we create a couple nodes in the node graph.</span>
-</span><span class="linenos">24</span>    <span class="n">node_a</span> <span class="o">=</span> <span class="n">node_graph</span><span class="o">.</span><span class="n">create_node</span><span class="p">(</span><span class="s1">&#39;com.chantasticvfx.MyNode&#39;</span><span class="p">,</span>
-<span class="linenos">25</span>                                    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;node a&#39;</span><span class="p">)</span>
-<span class="linenos">26</span>    <span class="n">node_b</span> <span class="o">=</span> <span class="n">node_graph</span><span class="o">.</span><span class="n">create_node</span><span class="p">(</span><span class="s1">&#39;com.chantasticvfx.MyNode&#39;</span><span class="p">,</span>
-<span class="linenos">27</span>                                    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;node b&#39;</span><span class="p">,</span>
-<span class="linenos">28</span>                                    <span class="n">pos</span><span class="o">=</span><span class="p">[</span><span class="mi">300</span><span class="p">,</span> <span class="mi">100</span><span class="p">])</span>
-<span class="linenos">29</span>
-<span class="linenos">30</span>    <span class="n">app</span><span class="o">.</span><span class="n">exec_</span><span class="p">()</span>
+<span class="hll"><span class="linenos">22</span>
+</span><span class="linenos">23</span>    <span class="c1"># here we create a couple nodes in the node graph.</span>
+<span class="linenos">24</span>    <span class="n">node_a</span> <span class="o">=</span> <span class="n">node_graph</span><span class="o">.</span><span class="n">create_node</span><span class="p">(</span><span class="s1">&#39;com.chantasticvfx.MyNode&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;node a&#39;</span><span class="p">)</span>
+<span class="linenos">25</span>    <span class="n">node_b</span> <span class="o">=</span> <span class="n">node_graph</span><span class="o">.</span><span class="n">create_node</span><span class="p">(</span><span class="s1">&#39;com.chantasticvfx.MyNode&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;node b&#39;</span><span class="p">,</span> <span class="n">pos</span><span class="o">=</span><span class="p">[</span><span class="mi">300</span><span class="p">,</span> <span class="mi">100</span><span class="p">])</span>
+<span class="linenos">26</span>
+<span class="linenos">27</span>    <span class="n">app</span><span class="o">.</span><span class="n">exec_</span><span class="p">()</span>
 </pre></div>
 </div>
 </section>
@@ -482,7 +479,7 @@ example to simply embed a <code class="docutils literal notranslate"><span class
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2021, Johnny Chan.
+        &#169; Copyright 2022, Johnny Chan.
 
     </p>
   </div> 

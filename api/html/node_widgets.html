@@ -8,7 +8,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Node Embedded Widgets &mdash; NodeGraphQt 0.1.7 documentation</title>
+  <title>Node Embedded Widgets &mdash; NodeGraphQt 0.2.0 documentation</title>
   
 
   
@@ -72,7 +72,7 @@
             
             
               <div class="version">
-                0.1.7
+                0.2.0
               </div>
             
           
@@ -112,9 +112,6 @@
 <li class="toctree-l2"><a class="reference internal" href="#nodecheckbox">NodeCheckBox</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#nodecombobox">NodeComboBox</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#nodelineedit">NodeLineEdit</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#nodefilepath">NodeFilePath</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#nodefloatedit">NodeFloatEdit</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#nodeintedit">NodeIntEdit</a></li>
 </ul>
 </li>
 </ul>
@@ -406,11 +403,10 @@ widget is added into the node.)</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="NodeGraphQt.widgets.node_widgets.NodeCheckBox.set_value">
 <span class="sig-name descname"><span class="pre">set_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#NodeGraphQt.widgets.node_widgets.NodeCheckBox.set_value" title="Permalink to this definition">¶</a></dt>
-<dd><p>Sets the widgets current value.</p>
-<p>You must re-implement this property to if you’re using a custom widget.</p>
+<dd><p>Sets the widget checked state.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>text</strong> (<em>str</em>) – new text value.</p>
+<dd class="field-odd"><p><strong>state</strong> (<em>bool</em>) – check state.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -488,86 +484,14 @@ widget is added into the node.)</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="NodeGraphQt.widgets.node_widgets.NodeLineEdit.set_value">
 <span class="sig-name descname"><span class="pre">set_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#NodeGraphQt.widgets.node_widgets.NodeLineEdit.set_value" title="Permalink to this definition">¶</a></dt>
-<dd><p>Sets the widgets current value.</p>
-<p>You must re-implement this property to if you’re using a custom widget.</p>
+<dd><p>Sets the widgets current text.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>text</strong> (<em>str</em>) – new text value.</p>
+<dd class="field-odd"><p><strong>text</strong> (<em>str</em>) – new text.</p>
 </dd>
 </dl>
 </dd></dl>
 
-</dd></dl>
-
-</section>
-<section id="nodefilepath">
-<h2>NodeFilePath<a class="headerlink" href="#nodefilepath" title="Permalink to this headline">¶</a></h2>
-<dl class="py class">
-<dt class="sig sig-object py" id="NodeGraphQt.widgets.node_widgets.NodeFilePath">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">NodeGraphQt.widgets.node_widgets.</span></span><span class="sig-name descname"><span class="pre">NodeFilePath</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ext</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'*'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#NodeGraphQt.widgets.node_widgets.NodeFilePath" title="Permalink to this definition">¶</a></dt>
-<dd><p>Displays as a <code class="docutils literal notranslate"><span class="pre">QLineEdit</span></code> in a node.</p>
-<p><strong>Inherited from:</strong> <a class="reference internal" href="#NodeGraphQt.NodeBaseWidget" title="NodeGraphQt.widgets.node_widgets.NodeBaseWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">NodeBaseWidget</span></code></a></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>To embed a <code class="docutils literal notranslate"><span class="pre">QLineEdit</span></code> in a node see:
-<a class="reference internal" href="nodes/BaseNode.html#NodeGraphQt.BaseNode.add_file_input" title="NodeGraphQt.BaseNode.add_file_input"><code class="xref py py-meth docutils literal notranslate"><span class="pre">NodeGraphQt.BaseNode.add_file_input()</span></code></a></p>
-</div>
-</dd></dl>
-
-</section>
-<section id="nodefloatedit">
-<h2>NodeFloatEdit<a class="headerlink" href="#nodefloatedit" title="Permalink to this headline">¶</a></h2>
-<dl class="py class">
-<dt class="sig sig-object py" id="NodeGraphQt.widgets.node_widgets.NodeFloatEdit">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">NodeGraphQt.widgets.node_widgets.</span></span><span class="sig-name descname"><span class="pre">NodeFloatEdit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#NodeGraphQt.widgets.node_widgets.NodeFloatEdit" title="Permalink to this definition">¶</a></dt>
-<dd><p>Displays as a <code class="docutils literal notranslate"><span class="pre">QLineEdit</span></code> in a node.</p>
-<p><strong>Inherited from:</strong> <a class="reference internal" href="#NodeGraphQt.NodeBaseWidget" title="NodeGraphQt.widgets.node_widgets.NodeBaseWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">NodeBaseWidget</span></code></a></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><cite>To embed a</cite> <code class="docutils literal notranslate"><span class="pre">QLineEdit</span></code> <cite>in a node see func:</cite>
-<a class="reference internal" href="nodes/BaseNode.html#NodeGraphQt.BaseNode.add_float_input" title="NodeGraphQt.BaseNode.add_float_input"><code class="xref py py-meth docutils literal notranslate"><span class="pre">NodeGraphQt.BaseNode.add_float_input()</span></code></a></p>
-</div>
-<dl class="py method">
-<dt class="sig sig-object py" id="NodeGraphQt.widgets.node_widgets.NodeFloatEdit.get_value">
-<span class="sig-name descname"><span class="pre">get_value</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NodeGraphQt.widgets.node_widgets.NodeFloatEdit.get_value" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns the widgets current value.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>current value.</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>float</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="NodeGraphQt.widgets.node_widgets.NodeFloatEdit.set_value">
-<span class="sig-name descname"><span class="pre">set_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#NodeGraphQt.widgets.node_widgets.NodeFloatEdit.set_value" title="Permalink to this definition">¶</a></dt>
-<dd><p>Sets the widgets current value.</p>
-<p>You must re-implement this property to if you’re using a custom widget.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>text</strong> (<em>str</em>) – new text value.</p>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-</section>
-<section id="nodeintedit">
-<h2>NodeIntEdit<a class="headerlink" href="#nodeintedit" title="Permalink to this headline">¶</a></h2>
-<dl class="py class">
-<dt class="sig sig-object py" id="NodeGraphQt.widgets.node_widgets.NodeIntEdit">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">NodeGraphQt.widgets.node_widgets.</span></span><span class="sig-name descname"><span class="pre">NodeIntEdit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#NodeGraphQt.widgets.node_widgets.NodeIntEdit" title="Permalink to this definition">¶</a></dt>
-<dd><p>Displays as a <code class="docutils literal notranslate"><span class="pre">QLineEdit</span></code> in a node.</p>
-<p><strong>Inherited from:</strong> <a class="reference internal" href="#NodeGraphQt.NodeBaseWidget" title="NodeGraphQt.widgets.node_widgets.NodeBaseWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">NodeBaseWidget</span></code></a></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><cite>To embed a</cite> <code class="docutils literal notranslate"><span class="pre">QLineEdit</span></code> <cite>in a node see func:</cite>
-<a class="reference internal" href="nodes/BaseNode.html#NodeGraphQt.BaseNode.add_int_input" title="NodeGraphQt.BaseNode.add_int_input"><code class="xref py py-meth docutils literal notranslate"><span class="pre">NodeGraphQt.BaseNode.add_int_input()</span></code></a></p>
-</div>
 </dd></dl>
 
 </section>
@@ -587,7 +511,7 @@ widget is added into the node.)</p>
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2021, Johnny Chan.
+        &#169; Copyright 2022, Johnny Chan.
 
     </p>
   </div> 

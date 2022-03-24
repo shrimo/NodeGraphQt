@@ -8,7 +8,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Nodes &mdash; NodeGraphQt 0.1.7 documentation</title>
+  <title>Nodes &mdash; NodeGraphQt 0.2.0 documentation</title>
   
 
   
@@ -44,7 +44,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="NodeObject" href="nodes/NodeObject.html" />
+    <link rel="next" title="Port" href="nodes/Port.html" />
     <link rel="prev" title="Graphs" href="graph.html" /> 
 </head>
 
@@ -72,7 +72,7 @@
             
             
               <div class="version">
-                0.1.7
+                0.2.0
               </div>
             
           
@@ -102,9 +102,11 @@
 <li class="toctree-l1"><a class="reference internal" href="constants.html">Constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="graph.html">Graphs</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Nodes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="nodes/Port.html">Port</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nodes/NodeObject.html">NodeObject</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nodes/BaseNode.html">BaseNode</a></li>
-<li class="toctree-l2"><a class="reference internal" href="nodes/Port.html">Port</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodes/GroupNode.html">GroupNode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodes/PortNode.html">PortNode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nodes/BackdropNode.html">BackdropNode</a></li>
 </ul>
 </li>
@@ -193,12 +195,19 @@
             
   <section id="nodes">
 <h1>Nodes<a class="headerlink" href="#nodes" title="Permalink to this headline">¶</a></h1>
+<p>Node object types from the NodeGraphQt module.</p>
 <div class="toctree-wrapper compound" id="nodestoc">
 <p class="caption"><span class="caption-text">Node Classes</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="nodes/Port.html">Port</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nodes/NodeObject.html">NodeObject</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nodes/BaseNode.html">BaseNode</a></li>
-<li class="toctree-l1"><a class="reference internal" href="nodes/Port.html">Port</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nodes/GroupNode.html">GroupNode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nodes/PortNode.html">PortNode</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="nodes/PortNode.html#portinputnode">PortInputNode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodes/PortNode.html#portoutputnode">PortOutputNode</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="nodes/BackdropNode.html">BackdropNode</a></li>
 </ul>
 </div>
@@ -210,7 +219,7 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="nodes/NodeObject.html" class="btn btn-neutral float-right" title="NodeObject" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="nodes/Port.html" class="btn btn-neutral float-right" title="Port" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="graph.html" class="btn btn-neutral float-left" title="Graphs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
@@ -218,7 +227,7 @@
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2021, Johnny Chan.
+        &#169; Copyright 2022, Johnny Chan.
 
     </p>
   </div> 

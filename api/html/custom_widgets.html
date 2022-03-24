@@ -8,7 +8,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Custom Widgets &mdash; NodeGraphQt 0.1.7 documentation</title>
+  <title>Custom Widgets &mdash; NodeGraphQt 0.2.0 documentation</title>
   
 
   
@@ -72,7 +72,7 @@
             
             
               <div class="version">
-                0.1.7
+                0.2.0
               </div>
             
           
@@ -110,7 +110,6 @@
 <li class="toctree-l2"><a class="reference internal" href="#properties-bin">Properties Bin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#nodes-palette">Nodes Palette</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#nodes-tree">Nodes Tree</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#publish-node">Publish Node</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="node_widgets.html">Node Embedded Widgets</a></li>
@@ -196,10 +195,12 @@
 <p>Here’s a few custom widgets that included with the <code class="docutils literal notranslate"><span class="pre">NodeGraphQt</span></code> framework.</p>
 <section id="properties-bin">
 <h2>Properties Bin<a class="headerlink" href="#properties-bin" title="Permalink to this headline">¶</a></h2>
-<p>The <a class="reference internal" href="#NodeGraphQt.PropertiesBinWidget" title="NodeGraphQt.PropertiesBinWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">NodeGraphQt.PropertiesBinWidget</span></code></a> is a list widget for displaying
+<dl class="py class">
+<dt class="sig sig-object py" id="NodeGraphQt.PropertiesBinWidget">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">NodeGraphQt.</span></span><span class="sig-name descname"><span class="pre">PropertiesBinWidget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_graph</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#NodeGraphQt.PropertiesBinWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>The <a class="reference internal" href="#NodeGraphQt.PropertiesBinWidget" title="NodeGraphQt.PropertiesBinWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">NodeGraphQt.PropertiesBinWidget</span></code></a> is a list widget for displaying
 and editing a nodes properties.</p>
 <img alt="_images/prop_bin.png" src="_images/prop_bin.png" style="width: 950px;" />
-<p>example</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kn">from</span> <span class="nn">NodeGraphQt</span> <span class="kn">import</span> <span class="n">NodeGraph</span><span class="p">,</span> <span class="n">PropertiesBinWidget</span>
 <span class="linenos">2</span>
 <span class="linenos">3</span><span class="c1"># create node graph.</span>
@@ -210,11 +211,6 @@ and editing a nodes properties.</p>
 <span class="linenos">8</span><span class="n">properties_bin</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<hr class="docutils" />
-<dl class="py class">
-<dt class="sig sig-object py" id="NodeGraphQt.PropertiesBinWidget">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">NodeGraphQt.</span></span><span class="sig-name descname"><span class="pre">PropertiesBinWidget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_graph</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#NodeGraphQt.PropertiesBinWidget" title="Permalink to this definition">¶</a></dt>
-<dd><p>Node properties bin for displaying properties.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -304,12 +300,16 @@ and editing a nodes properties.</p>
 </section>
 <section id="nodes-palette">
 <h2>Nodes Palette<a class="headerlink" href="#nodes-palette" title="Permalink to this headline">¶</a></h2>
-<p><em>Implemented on NodeGraphQt:</em> <code class="docutils literal notranslate"><span class="pre">v0.1.7</span></code></p>
-<p>The <a class="reference internal" href="#NodeGraphQt.NodesPaletteWidget" title="NodeGraphQt.NodesPaletteWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">NodeGraphQt.NodesPaletteWidget</span></code></a> is a widget for displaying all
-registered nodes from the node graph in a grid layout with this widget a user
-can create nodes by dragging and dropping.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="NodeGraphQt.NodesPaletteWidget">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">NodeGraphQt.</span></span><span class="sig-name descname"><span class="pre">NodesPaletteWidget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_graph</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#NodeGraphQt.NodesPaletteWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>The <a class="reference internal" href="#NodeGraphQt.NodesPaletteWidget" title="NodeGraphQt.NodesPaletteWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">NodeGraphQt.NodesPaletteWidget</span></code></a> is a widget for displaying all
+registered nodes from the node graph in a grid layout with this widget a
+user can create nodes by dragging and dropping.</p>
+<div class="line-block">
+<div class="line"><em>Implemented on NodeGraphQt:</em> <code class="docutils literal notranslate"><span class="pre">v0.1.7</span></code></div>
+</div>
 <img alt="_images/nodes_palette.png" src="_images/nodes_palette.png" style="width: 400px;" />
-<p>example</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kn">from</span> <span class="nn">NodeGraphQt</span> <span class="kn">import</span> <span class="n">NodeGraph</span><span class="p">,</span> <span class="n">NodesPaletteWidget</span>
 <span class="linenos">2</span>
 <span class="linenos">3</span><span class="c1"># create node graph.</span>
@@ -320,11 +320,15 @@ can create nodes by dragging and dropping.</p>
 <span class="linenos">8</span><span class="n">nodes_palette</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<hr class="docutils" />
-<dl class="py class">
-<dt class="sig sig-object py" id="NodeGraphQt.NodesPaletteWidget">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">NodeGraphQt.</span></span><span class="sig-name descname"><span class="pre">NodesPaletteWidget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_graph</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#NodeGraphQt.NodesPaletteWidget" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="py method">
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>parent</strong> (<em>QtWidgets.QWidget</em>) – parent of the new widget.</p></li>
+<li><p><strong>node_graph</strong> (<a class="reference internal" href="graph.html#NodeGraphQt.NodeGraph" title="NodeGraphQt.NodeGraph"><em>NodeGraphQt.NodeGraph</em></a>) – node graph.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
 <dt class="sig sig-object py" id="NodeGraphQt.NodesPaletteWidget.set_category_label">
 <span class="sig-name descname"><span class="pre">set_category_label</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">category</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#NodeGraphQt.NodesPaletteWidget.set_category_label" title="Permalink to this definition">¶</a></dt>
 <dd><p>Override tab label for a node category tab.</p>
@@ -349,26 +353,23 @@ can create nodes by dragging and dropping.</p>
 </section>
 <section id="nodes-tree">
 <h2>Nodes Tree<a class="headerlink" href="#nodes-tree" title="Permalink to this headline">¶</a></h2>
-<p>The <a class="reference internal" href="#NodeGraphQt.NodeTreeWidget" title="NodeGraphQt.NodeTreeWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">NodeGraphQt.NodeTreeWidget</span></code></a> is a widget for displaying all
-registered nodes from the node graph with this widget a user can create nodes
-by dragging and dropping.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="NodeGraphQt.NodesTreeWidget">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">NodeGraphQt.</span></span><span class="sig-name descname"><span class="pre">NodesTreeWidget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_graph</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#NodeGraphQt.NodesTreeWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>The <a class="reference internal" href="#NodeGraphQt.NodesTreeWidget" title="NodeGraphQt.NodesTreeWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">NodeGraphQt.NodesTreeWidget</span></code></a> is a widget for displaying all
+registered nodes from the node graph with this widget a user can create
+nodes by dragging and dropping.</p>
 <img alt="_images/nodes_tree.png" src="_images/nodes_tree.png" style="width: 300px;" />
-<p>example</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kn">from</span> <span class="nn">NodeGraphQt</span> <span class="kn">import</span> <span class="n">NodeGraph</span><span class="p">,</span> <span class="n">NodeTreeWidget</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kn">from</span> <span class="nn">NodeGraphQt</span> <span class="kn">import</span> <span class="n">NodeGraph</span><span class="p">,</span> <span class="n">NodesTreeWidget</span>
 <span class="linenos">2</span>
 <span class="linenos">3</span><span class="c1"># create node graph.</span>
 <span class="linenos">4</span><span class="n">graph</span> <span class="o">=</span> <span class="n">NodeGraph</span><span class="p">()</span>
 <span class="linenos">5</span>
 <span class="linenos">6</span><span class="c1"># create node tree widget.</span>
-<span class="linenos">7</span><span class="n">nodes_tree</span> <span class="o">=</span> <span class="n">NodeTreeWidget</span><span class="p">(</span><span class="n">parent</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">node_graph</span><span class="o">=</span><span class="n">graph</span><span class="p">)</span>
+<span class="linenos">7</span><span class="n">nodes_tree</span> <span class="o">=</span> <span class="n">NodesTreeWidget</span><span class="p">(</span><span class="n">parent</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">node_graph</span><span class="o">=</span><span class="n">graph</span><span class="p">)</span>
 <span class="linenos">8</span><span class="n">nodes_tree</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<hr class="docutils" />
-<dl class="py class">
-<dt class="sig sig-object py" id="NodeGraphQt.NodeTreeWidget">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">NodeGraphQt.</span></span><span class="sig-name descname"><span class="pre">NodeTreeWidget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_graph</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#NodeGraphQt.NodeTreeWidget" title="Permalink to this definition">¶</a></dt>
-<dd><p>Node tree for displaying node types.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -378,8 +379,8 @@ by dragging and dropping.</p>
 </dd>
 </dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="NodeGraphQt.NodeTreeWidget.set_category_label">
-<span class="sig-name descname"><span class="pre">set_category_label</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">category</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#NodeGraphQt.NodeTreeWidget.set_category_label" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="NodeGraphQt.NodesTreeWidget.set_category_label">
+<span class="sig-name descname"><span class="pre">set_category_label</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">category</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#NodeGraphQt.NodesTreeWidget.set_category_label" title="Permalink to this definition">¶</a></dt>
 <dd><p>Override the label for a node category root item.</p>
 <img alt="_images/nodes_tree_category_label.png" src="_images/nodes_tree_category_label.png" style="width: 70%;" />
 <dl class="field-list simple">
@@ -393,29 +394,11 @@ by dragging and dropping.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="NodeGraphQt.NodeTreeWidget.update">
-<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NodeGraphQt.NodeTreeWidget.update" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="NodeGraphQt.NodesTreeWidget.update">
+<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NodeGraphQt.NodesTreeWidget.update" title="Permalink to this definition">¶</a></dt>
 <dd><p>Update and refresh the node tree widget.</p>
 </dd></dl>
 
-</dd></dl>
-
-</section>
-<section id="publish-node">
-<h2>Publish Node<a class="headerlink" href="#publish-node" title="Permalink to this headline">¶</a></h2>
-<p>The <a class="reference internal" href="#NodeGraphQt.NodePublishWidget" title="NodeGraphQt.NodePublishWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">NodeGraphQt.NodePublishWidget</span></code></a> is a simple widget for publishing
-nodes to a serialized json formatted file.</p>
-<img alt="_images/node_publish_dialog.png" src="_images/node_publish_dialog.png" style="width: 411px;" />
-<hr class="docutils" />
-<dl class="py class">
-<dt class="sig sig-object py" id="NodeGraphQt.NodePublishWidget">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">NodeGraphQt.</span></span><span class="sig-name descname"><span class="pre">NodePublishWidget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#NodeGraphQt.NodePublishWidget" title="Permalink to this definition">¶</a></dt>
-<dd><p>Node publish dialog widget for publishing nodes.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>node</strong> (<a class="reference internal" href="nodes/BaseNode.html#NodeGraphQt.BaseNode" title="NodeGraphQt.BaseNode"><em>NodeGraphQt.BaseNode</em></a>) – node object.</p>
-</dd>
-</dl>
 </dd></dl>
 
 </section>
@@ -435,7 +418,7 @@ nodes to a serialized json formatted file.</p>
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2021, Johnny Chan.
+        &#169; Copyright 2022, Johnny Chan.
 
     </p>
   </div> 
