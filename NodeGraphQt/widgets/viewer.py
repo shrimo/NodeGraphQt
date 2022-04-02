@@ -6,7 +6,9 @@ from distutils.version import LooseVersion
 from Qt import QtGui, QtCore, QtWidgets
 
 from NodeGraphQt.base.menu import BaseMenu
-from NodeGraphQt.constants import IN_PORT, OUT_PORT, PIPE_LAYOUT_CURVED
+from NodeGraphQt.constants import (
+    IN_PORT, OUT_PORT, PIPE_LAYOUT_CURVED, NODE_LAYOUT_HORIZONTAL
+)
 from NodeGraphQt.qgraphics.node_abstract import AbstractNodeItem
 from NodeGraphQt.qgraphics.node_backdrop import BackdropNodeItem
 from NodeGraphQt.qgraphics.pipe import PipeItem, LivePipeItem
@@ -71,6 +73,8 @@ class NodeViewer(QtWidgets.QGraphicsView):
             0, 0, self.size().width(), self.size().height())
         self._update_scene()
         self._last_size = self.size()
+
+        self._layout_direction = NODE_LAYOUT_HORIZONTAL
 
         self._pipe_layout = PIPE_LAYOUT_CURVED
         self._detached_port = None
@@ -1147,11 +1151,29 @@ class NodeViewer(QtWidgets.QGraphicsView):
         Sets the pipe layout mode and redraw all pipe items in the scene.
 
         Args:
-            layout (int): pipe layout mode. (see the contants module)
+            layout (int): pipe layout mode. (see the constants module)
         """
         self._pipe_layout = layout
         for pipe in self.all_pipes():
             pipe.draw_path(pipe.input_port, pipe.output_port)
+
+    def get_layout_direction(self):
+        """
+        Get the layout direction of the node graph.
+
+        Returns:
+            int: graph layout mode.
+        """
+        return self._layout_direction
+
+    def set_layout_direction(self, direction):
+        """
+        Sets the node graph layout direction.
+
+        Args:
+            direction (int): graph layout direction. (see the constants module)
+        """
+        self._layout_direction = direction
 
     def reset_zoom(self, cent=None):
         """
