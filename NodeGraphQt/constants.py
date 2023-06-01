@@ -118,6 +118,8 @@ class NodeEnum(Enum):
     SELECTED_BORDER_COLOR = (254, 207, 42, 255)
     #: default node border color.
     BORDER_COLOR = (50, 50, 50, 255)
+    #: color node name text 
+    TEXT_COLOR = (180, 180, 180, 255)
 
 # ==================================== PORT ====================================
 

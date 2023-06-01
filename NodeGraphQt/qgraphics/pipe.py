@@ -35,7 +35,7 @@ class PipeItem(QtWidgets.QGraphicsPathItem):
         self._highlight = False
         self._input_port = input_port
         self._output_port = output_port
-        size = 6.0
+        size = 8.0
         self._arrow = QtGui.QPolygonF()
         self._arrow.append(QtCore.QPointF(-size, size))
         self._arrow.append(QtCore.QPointF(0.0, -size * 1.5))

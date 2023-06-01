@@ -220,7 +220,8 @@ class NodeItem(AbstractNodeItem):
         Args:
             color (tuple): color value in (r, g, b, a).
         """
-        text_color = QtGui.QColor(*color)
+        # text_color = QtGui.QColor(*color)
+        text_color = QtGui.QColor(*NodeEnum.TEXT_COLOR.value)
         for port, text in self._input_items.items():
             text.setDefaultTextColor(text_color)
         for port, text in self._output_items.items():
