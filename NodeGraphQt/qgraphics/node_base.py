@@ -822,20 +822,21 @@ class NodeItemVertical(NodeItem):
             painter.drawRoundedRect(rect, radius, radius)
 
         # top & bottom edge background.
-        padding = 2.0
-        height = 10
-        if self.selected:
-            painter.setBrush(QtGui.QColor(*NodeEnum.SELECTED_COLOR.value))
-        else:
-            painter.setBrush(QtGui.QColor(0, 0, 0, 80))
-        for y in [rect.y() + padding, rect.height() - height - 1]:
-            edge_rect = QtCore.QRectF(rect.x() + padding, y,
-                                     rect.width() - (padding * 2), height)
-            painter.drawRoundedRect(edge_rect, 3.0, 3.0)
+        # padding = 2.0
+        # height = 10
+        # if self.selected:
+        #     painter.setBrush(QtGui.QColor(*NodeEnum.SELECTED_COLOR.value))
+        # else:
+        #     painter.setBrush(QtGui.QColor(0, 0, 0, 80))
+        # for y in [rect.y() + padding, rect.height() - height - 1]:
+        #     edge_rect = QtCore.QRectF(rect.x() + padding, y,
+        #                              rect.width() - (padding * 2), height)
+        #     painter.drawRoundedRect(edge_rect, 3.0, 3.0)
 
         # node border
         border_width = 0.8
-        border_color = QtGui.QColor(*self.border_color)
+        # border_color = QtGui.QColor(*self.border_color)
+        border_color = QtGui.QColor(*NodeEnum.BORDER_COLOR.value)
         if self.selected:
             border_width = 1.2
             border_color = QtGui.QColor(
