@@ -816,11 +816,14 @@ class PropListWidget(QtWidgets.QWidget):
         if row > 0:
             row += 1
 
-        label_flags = QtCore.Qt.AlignCenter | QtCore.Qt.AlignRight
-        if widget.__class__.__name__ == 'PropTextEdit':
-            label_flags = label_flags | QtCore.Qt.AlignTop
+        # label_flags = QtCore.Qt.AlignCenter | QtCore.Qt.AlignRight
+        # print(widget)
+        # if widget.__class__.__name__ == 'PropTextEdit':
+        # label_flags = label_flags | QtCore.Qt.AlignTop
+        lb = QtWidgets.QLabel()
 
-        self.__layout.addWidget(QtWidgets.QLabel(label), row, 0, label_flags)
+        # self.__layout.addWidget(QtWidgets.QLabel(label), row, 0, label_flags)
+        self.__layout.addWidget(lb, row, 0, QtCore.Qt.AlignTop)
         self.__layout.addWidget(widget, row, 1)
 
     def get_widget(self, name):

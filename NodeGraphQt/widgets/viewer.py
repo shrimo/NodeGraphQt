@@ -580,9 +580,10 @@ class NodeViewer(QtWidgets.QGraphicsView):
         self.SHIFT_state = event.modifiers() == QtCore.Qt.ShiftModifier
 
         # Todo: find a better solution to catch modifier keys.
-        if event.modifiers() == (QtCore.Qt.AltModifier | QtCore.Qt.ShiftModifier):
-            self.ALT_state = True
-            self.SHIFT_state = True
+        # TypeError: 'PySide2.QtCore.Qt.KeyboardModifier' object cannot be interpreted as an integer
+        # if event.modifiers() == (QtCore.Qt.AltModifier | QtCore.Qt.ShiftModifier):
+        #     self.ALT_state = True
+        #     self.SHIFT_state = True
 
         super(NodeViewer, self).keyPressEvent(event)
 

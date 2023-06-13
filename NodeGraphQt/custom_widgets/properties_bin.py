@@ -24,12 +24,13 @@ class PropertiesDelegate(QtWidgets.QStyledItemDelegate):
 
         # draw border.
         border_width = 1
-        if option.state & QtWidgets.QStyle.State_Selected:
-            bdr_clr = option.palette.highlight().color()
-            painter.setPen(QtGui.QPen(bdr_clr, 1.5))
-        else:
-            bdr_clr = option.palette.alternateBase().color()
-            painter.setPen(QtGui.QPen(bdr_clr, 1))
+        # print('option->', dir(option.palette.highlight()))
+        # if option.state & QtWidgets.QStyle.State_Selected:
+        #     bdr_clr = option.palette.highlight().color()
+        #     painter.setPen(QtGui.QPen(bdr_clr, 1.5))
+        # else:
+        #     bdr_clr = option.palette.alternateBase().color()
+        #     painter.setPen(QtGui.QPen(bdr_clr, 1))
 
         painter.setBrush(QtCore.Qt.NoBrush)
         painter.drawRect(QtCore.QRect(
