@@ -1,6 +1,8 @@
 #!/usr/bin/python
 from Qt import QtWidgets, QtCore, QtGui, QtCompat
-
+# import sys
+# if '/home/vfx/GitHub/NodeGraphQt' not in sys.path:
+#     sys.path.append('/home/vfx/GitHub/NodeGraphQt')
 from NodeGraphQt.custom_widgets.properties import NodePropWidget
 
 
@@ -24,6 +26,7 @@ class PropertiesDelegate(QtWidgets.QStyledItemDelegate):
 
         # draw border.
         border_width = 1
+        painter.setPen(QtGui.QPen(QtGui.QColor('grey'), 1.5))
         # print('option->', dir(option.palette.highlight()))
         # if option.state & QtWidgets.QStyle.State_Selected:
         #     bdr_clr = option.palette.highlight().color()
@@ -277,7 +280,7 @@ class PropertiesBinWidget(QtWidgets.QWidget):
 
 
 if __name__ == '__main__':
-    import sys
+    
     from NodeGraphQt import BaseNode, NodeGraph
     from NodeGraphQt.constants import (NODE_PROP_QLABEL,
                                        NODE_PROP_QLINEEDIT,
